@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basic User Form</title>
+  <style>
+    
+    fieldset {
+      border: 2px solid #0e53a1; 
+      border-radius: 20px;
+      padding: 40px 60px;
+      max-width: 400px;
+      margin: 30px auto;
+      background-color: #f9faff;
+    }
+
+    
+    legend {
+      color: #265022;
+      font-weight: bold;
+      font-size: 2.2rem;
+      padding: 0 10px;
+    }
+
+    
+    input[type="text"],
+    input[type="email"] {
+      width: calc(100% - 12px);
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #4e4580;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    
+    input[type="submit"] {
+      background-color: #db4343;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #31975f;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone"> Phone:</label><br>
+      <input type = "tel" id="phone" name="phone" required><br>
+      <br>
+      
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+</body>
+</html>
