@@ -1,101 +1,116 @@
 <!DOCTYPE html>
 <html>
-    
-    <table border="1" style="width:100%" cellspacing="0" cellpadding="10">
-        <head>
-            <title>Time Table</title>
-        </head>
-    <style>   
+<head>
+    <title>Time Table</title>
+    <style>
         table, th, td {
-  border:1px solid black;}
-        th { background-color: lightblue;}
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: lightblue;
+        }
         tbody tr:nth-child(odd) {
-    background-color: pink;
-}
+            background-color: pink;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            max-width: 900px;
+        }
+        td, th {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
 
-tbody tr:nth-child(even) {
-    background-color: #ffffff;
-}
+<table cellspacing="0" cellpadding="10">
+    <tr> 
+        <th> PERIOD</th>
+        <th> P1</th>
+        <th> P2</th>
+        <th> P3</th>
+        <th> Lunch</th>
+        <th> P4</th>
+        <th> P5</th>    
+        <th> P6</th>
+    </tr>
+    <tr>
+        <td> timings</td>
+        <td> 9:10-10:10</td>
+        <td> 10:10-11:10</td>
+        <td> 11:10-12:10</td>
+        
+        <td> 12:10-1:00</td>
+        <td> 1:00-2:00</td> 
+        <td> 2:00-3:00</td>
+        <td> 3:00-4:05</td>
+    </tr>
+    <tr>
+        <td> MONDAY </td>
+        <td colspan="2"> EAD LAB</td>
+        
+        <td> FLAT</td>
+        
+        <td rowspan="5" style="background-color: #ffe0b2; font-weight: bold;">Lunch</td>
+        <td> ML</td>
+        <td> CS </td>
+        <td> SE </td>
+    </tr>  
+    <tr>
+        <td> TUESDAY </td>
+        <td colspan="2"> ML LAB</td>
+        
+        <td> EAD </td>
+   
+        <td> CN </td>
+        <td colspan="2"> CC LAB</td>
+        
+    </tr>
+    <tr> 
+        <td> WEDNESDAY </td>
+        <td> CS </td>
+        <td> EAD </td>
+        <td> Case tools lab</td>
+       
+        <td> case tools lab</td>
+        <td> se </td>
+        <td> ml </td>
+    </tr>
+    <tr>
+       <td> THURSDAY </td>
+       <td> flat </td>
+       <td> ead </td>
+       <td> cn lab </td>
+      
+       <td> cn lab </td>
+       <td> ml </td>
+       <td> ead </td>
+    </tr>
+    <tr>
+        <td> FRIDAY </td>
+        <td> SE </td>
+        <td> LIB </td>
+        <td> SPORTS </td>
+        
+        <td> cs </td>
+        <td> flat </td>
+        <td> cn </td>
+    </tr>
+</table>
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-    </style> 
-        <tr> 
-            <th> PERIOD</th>
-            <th> P1</th>
-            <th> P2</th>
-            <th> P3</th>
-            <th> Lunch</th>
-            <th> P4</th>
-            <th> P5</th>    
-            <th> P6</th>
-        </tr>
-        <tr>
-            <td> timings</td>
-            <td> 9:10-10:10</td>
-            <td> 10:10-11:10</td>
-            <td> 11:10-12:10</td>
-            <td> 12:10-1:00</td>
-            <td> 1:00-2:00</td> 
-            <td> 2:00-3:00</td>
-            <td> 3:00-4:05</td>
-        </tr>
-        <tr>
-            <td> MONDAY </td>
-            <td> EAD LAB</td>
-            <td> EAD LAB </td>
-            <td> FLAT</td>
-            <td> Lunch</td>
-            <td> ML</td>
-            <td> CS </td>
-            <td> SE </td>
-        </tr>  
-        <tr>
-            <td> TUESDAY </td>
-            <td> ML LAB</td>
-            <td> ML LAB</td>
-            <td> EAD </td>
-            <td> lunch</td>
-            <td> CN </td>
-            <td> CC LAB</td>
-            <td> CC LAB </td>
-        </tr>
-        <tr> 
-            <td> WEDNESDAY </td>
-            <td> CS </td>
-            <td> EAD </td>
-            <td> Case tools lab</td>
-            <td> lunch </td>
-            <td> case tools lab</td>
-            <td> se </td>
-            <td> ml </td>
-        </tr>
-        <tr>
-           <td> THURSDAY </td>
-           <td> flat </td>
-           <td> ead </td>
-           <td> cn lab </td>
-           <td> lunch </td>
-           <td> cn lab </td>
-           <td> ml </td>
-           <td> ead </td>
-        </tr>
-        <tr>
-            <td> FRIDAY </td>
-            <td> SE </td>
-            <td> LIB </td>
-            <td> SPORTS </td>
-            <td> LUNCH </td>
-            <td> cs </td>
-            <td> flat </td>
-            <td> cn </td>
-        </tr>
-    </table>
+</body>
 </html>
