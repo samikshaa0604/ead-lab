@@ -1,171 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Podichetty Samiksha - Resume</title>
-  <style>
-    /* General page styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Name heading */
-    h1 {
-      font-size: 2.8rem;
-      color: #2c3e50;
-      margin-bottom: 5px;
-      border-bottom: 3px solid #0763a0;
-      padding-bottom: 10px;
-    }
-
-    /* Contact info */
-    p.contact {
-      font-size: 1.1rem;
-      color: #000000;
-      margin-top: 0;
-      margin-bottom: 30px;
-    }
-
-    p.contact strong {
-      color: #2980b9;
-    }
-
-    /* Section headings */
-    h2 {
-      font-size: 1.8rem;
-      color: #2980b9;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-    }
-
-    /* About me paragraph */
-    #about {
-      font-size: 1.1rem;
-      margin-bottom: 40px;
-      background-color: #eaf2f8;
-      padding: 15px 20px;
-      border-radius: 5px;
-      border-left: 5px solid #2980b9;
-    }
-
-    /* Education table */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 40px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      background-color: white;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px 15px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #2980b9;
-      color: white;
-      font-weight: 600;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f4f7fb;
-    }
-
-    /* Skills list */
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-      column-count: 2;
-      column-gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-      font-size: 1.05rem;
-      color: #444;
-    }
-
-    /* Responsive for smaller screens */
-    @media (max-width: 600px) {
-      ul {
-        column-count: 1;
-      }
-      body {
-        margin: 20px;
-        padding: 10px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Podichetty Samiksha - Resume</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; }
+  h1 { font-size: 32px; color: #2c3e50; }
+  h2 { font-size: 24px; color: #2980b9; margin-top: 20px; }
+  .contact { margin-bottom: 20px; font-size: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  th, td { border: 1px solid #000; padding: 8px; }
+  th { background: #2980b9; color: white; }
+  ul { font-size: 16px; }
+</style>
 </head>
 <body>
 
-  <h1>Podichetty Samiksha</h1>
+<h1>Podichetty Samiksha</h1>
+<p class="contact">
+  <strong>Email:</strong> samiksha10.1b@gmail.com<br>
+  <strong>Mobile:</strong> 9392244726
+</p>
 
-  <p class="contact">
-    <strong>Email:</strong> samiksha10.1b@gmail.com<br />
-    <strong>Mobile:</strong> 9392244726
-  </p>
+<h2>About Me</h2>
+<p>Motivated third-year B.Tech student specializing in Information Technology with problem-solving and teamwork skills.</p>
 
-  <h2>About Me</h2>
-  <p id="about">
-    Motivated third-year B.Tech student specializing in Information Technology. Strong analytical and problem-solving abilities, coupled with teamwork and communication skills. Seeking opportunities to apply technical expertise and contribute to innovative, growth-oriented projects.
-  </p>
+<h2>Education</h2>
+<table>
+  <tr><th>Institution</th><th>Qualification</th><th>Result</th></tr>
+  <tr><td>CBIT, Hyderabad</td><td>B.E (IT)</td><td>8.86 CGPA</td></tr>
+  <tr><td>FIITJEE Jr College</td><td>Intermediate (MPC)</td><td>94.9%</td></tr>
+  <tr><td>FIITJEE World School</td><td>SSC</td><td>10 CGPA</td></tr>
+</table>
 
-  <h2>Education</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Institution</th>
-        <th>Qualification</th>
-        <th>Result</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Chaitanya Bharathi Institute of Technology, Hyderabad</td>
-        <td>B.E (Information Technology)</td>
-        <td>8.86 CGPA</td>
-      </tr>
-      <tr>
-        <td>FIITJEE Junior College, Hyderabad</td>
-        <td>Intermediate (MPC)</td>
-        <td>94.9%</td>
-      </tr>
-      <tr>
-        <td>FIITJEE World School</td>
-        <td>Secondary School (SSC)</td>
-        <td>10 CGPA</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>Skills</h2>
-  <ul>
-    <li>Python</li>
-    <li>Java</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>SQL</li>
-    <li>MongoDB</li>
-    <li>AutoCAD</li>
-    <li>Tinkercad</li>
-    <li>SOLIDWORKS</li>
-    <li>Problem Solving</li>
-    <li>Teamwork</li>
-    <li>Creativity</li>
-  </ul>
+<h2>Skills</h2>
+<ul>
+  <li>Python</li><li>Java</li><li>HTML</li><li>CSS</li>
+  <li>JavaScript</li><li>SQL</li><li>MongoDB</li>
+</ul>
 
 </body>
 </html>
